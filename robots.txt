@@ -1,0 +1,53 @@
+User-agent: *
+Allow: /
+
+# Disallow certain file types that shouldn't be indexed
+Disallow: /css/
+Disallow: /js/
+Disallow: *.css$
+Disallow: *.js$
+
+# Allow search engines to crawl all HTML pages
+Allow: /*.html$
+
+# Sitemap location
+Sitemap: https://phoenix-ductless.netlify.app/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Disallow automated scrapers and content thieves
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Allow social media crawlers for proper sharing
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
